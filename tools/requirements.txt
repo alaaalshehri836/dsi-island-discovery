@@ -1,0 +1,6 @@
+# Python 3.11+ - only needed to REGENERATE assets (the website itself has no build step)
+numpy
+pillow
+scipy
+soundfile
+kokoro-onnx      # narration (Kokoro-82M, Apache-2.0); also needs the two model files, see gen_narration.py

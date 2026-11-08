@@ -1,0 +1,15 @@
+{
+ "cell": [
+  72,
+  72
+ ],
+ "frames": {
+  "neutral": 0,
+  "blink": 1,
+  "lookR": 2,
+  "lookR_glow": 3,
+  "surprised": 4,
+  "surprised_blink": 5,
+  "awe": 6
+ }
+}

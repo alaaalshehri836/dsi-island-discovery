@@ -1,0 +1,60 @@
+{
+  "female": {
+    "voice": "af_heart",
+    "lines": {
+      "n01": {
+        "text": "A new world is waiting...",
+        "speech": 1.518
+      },
+      "n02": {
+        "text": "Every journey begins somewhere.",
+        "speech": 1.683
+      },
+      "n03": {
+        "text": "Something is waiting for you...",
+        "speech": 1.707
+      },
+      "n04": {
+        "text": "Some discoveries change everything.",
+        "speech": 2.141
+      },
+      "n05": {
+        "text": "The adventure is just beginning.",
+        "speech": 1.978
+      },
+      "n06": {
+        "text": "Meet us at DSI. Your next adventure starts here.",
+        "speech": 3.433
+      }
+    }
+  },
+  "male": {
+    "voice": "bm_george",
+    "lines": {
+      "n01": {
+        "text": "A new world is waiting...",
+        "speech": 1.98
+      },
+      "n02": {
+        "text": "Every journey begins somewhere.",
+        "speech": 2.475
+      },
+      "n03": {
+        "text": "Something is waiting for you...",
+        "speech": 2.155
+      },
+      "n04": {
+        "text": "Some discoveries change everything.",
+        "speech": 2.88
+      },
+      "n05": {
+        "text": "The adventure is just beginning.",
+        "speech": 2.475
+      },
+      "n06": {
+        "text": "Meet us at DSI. Your next adventure starts here.",
+        "speech": 3.947
+      }
+    }
+  }
+}

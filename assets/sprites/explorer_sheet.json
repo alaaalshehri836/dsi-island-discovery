@@ -1,0 +1,66 @@
+{
+ "cell": [
+  40,
+  54
+ ],
+ "anchor": [
+  20,
+  50
+ ],
+ "dirs": 16,
+ "dirNote": "column d = camera orbit yaw d*22.5deg around the character; 0 = camera in front (front view), 4 = camera on character LEFT side (+X) -> character faces screen-left, 12 = faces screen-right, 8 = back view",
+ "variants": {
+  "day": {
+   "idle": {
+    "row": 0,
+    "frames": 2
+   },
+   "walk": {
+    "row": 2,
+    "frames": 8
+   },
+   "look": {
+    "row": 10,
+    "frames": 4
+   },
+   "shade": {
+    "row": 14,
+    "frames": 1
+   },
+   "react": {
+    "row": 15,
+    "frames": 2
+   },
+   "jump": {
+    "row": 17,
+    "frames": 1
+   }
+  },
+  "portal": {
+   "idle": {
+    "row": 18,
+    "frames": 2
+   },
+   "walk": {
+    "row": 20,
+    "frames": 8
+   },
+   "look": {
+    "row": 28,
+    "frames": 4
+   },
+   "shade": {
+    "row": 32,
+    "frames": 1
+   },
+   "react": {
+    "row": 33,
+    "frames": 2
+   },
+   "jump": {
+    "row": 35,
+    "frames": 1
+   }
+  }
+ }
+}

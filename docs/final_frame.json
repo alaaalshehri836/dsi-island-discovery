@@ -1,0 +1,41 @@
+{
+  "filmTime": 20,
+  "camera": {
+    "x": -1190,
+    "z": -60,
+    "h": 60,
+    "yaw": 1.3264502315156905,
+    "hor": 0.4,
+    "F": 300,
+    "yawDeg": 76
+  },
+  "explorer": {
+    "x": -1046,
+    "z": 0,
+    "headingDeg": 90,
+    "anim": "idle",
+    "frame": 0,
+    "spriteColumn": "computed from camera, = column 9 (back, 3/4 from right)"
+  },
+  "portal": {
+    "x": -880,
+    "z": 0,
+    "scale": 1.5,
+    "intensity": 1,
+    "facing": "west (-X)"
+  },
+  "plaza": {
+    "x": -960,
+    "z": 0,
+    "r": 125
+  },
+  "sun": {
+    "az": -0.92,
+    "el": 0.36
+  },
+  "grade": {
+    "multiply": "#b9c4dc",
+    "vignette": 0.62,
+    "fogDistance": 2400
+  }
+}
