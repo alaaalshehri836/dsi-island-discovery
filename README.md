@@ -21,17 +21,11 @@ Useful URLs:
 |---|---|
 | `index.html` | the experience |
 | `index.html?voice=male` | alternative narrator (British male voice) |
-| `index.html?booth=HALL%20B%20·%20BOOTH%2012&date=12%20MAY%202027&info=...` | override event details without editing code |
 | `index.html?t=14.8` | freeze any moment of the film (for review/screenshots) |
 | `index.html?frame=final` | the clean final frame for Part 2 (see `docs/PART2_HANDOFF.md`) |
 
-## Configure the event details
-Edit `js/config.js`:
-```js
-export const EVENT = { booth: '[BOOTH LOCATION]', date: '[EVENT DATE]', info: '[MORE EVENT INFO]' };
-export const NARRATOR = 'female';   // or 'male'
-```
-Empty strings hide a line. The placeholders are deliberately left unfilled so that no event details are invented.
+## Configure the narrator
+In `js/config.js`, set `NARRATOR = 'female'` (the default) or `'male'`. You can also pass `?voice=male` in the URL.
 
 ## Deploy
 This repo is connected to Vercel: every push to `main` redeploys https://dsi-island-discovery.vercel.app automatically.
@@ -48,7 +42,7 @@ For a kiosk at the booth, open it fullscreen (F11) in Chrome, or run it on a ver
 | 02 Arrival | 3.6–7.65 | wide low shot behind the boat → side-view tracking shot; boat beaches, the explorer jumps out, walks (footprints in the sand), stops and looks around | "Every journey begins somewhere." |
 | 03 Exploration | 7.65–13.0 | side tracking past palms → rear-follow along the jungle path (a glowing rune-stone and an old signpost are hints) → crane up for a wide view of the island and sea → close-up: the explorer notices a blue flicker | "Something is waiting for you…" |
 | 04 Discovery | 13.0–19.75 | 3/4 shot approaching something in the distance → camera behind the explorer dollies through parting foliage, the portal awakens (glow, runes, particles, light on the ground) → close-up reaction lit blue → over-the-shoulder shot of the portal (the **final frame**) | "Some discoveries change everything." / "The adventure is just beginning." |
-| 05 Final announcement | 19.75–26 | final frame holds; DSI logo with shine, MEET US AT DSI!, YOUR NEXT ADVENTURE STARTS HERE., booth/date/info, REPLAY button | "Meet us at DSI. Your next adventure starts here." |
+| 05 Final announcement | 19.75–26 | final frame holds; DSI logo with shine, MEET US AT DSI!, REPLAY button | "Meet us at DSI. Your next adventure starts here." |
 
 ## How it works
 * **One world, many cameras.** `js/world.js` defines a single island: coastline, beach, path, plaza, portal,
@@ -77,7 +71,7 @@ See `assets/sprites/explorer_reference_sheet.png`.
 ```
 index.html, css/style.css
 js/  main.js (composition, UI, loop) · director.js (timeline) · renderer.js · world.js · audio.js
-     assets.js · pixelfont.js (hand-made 5×7 font) · config.js (event details) · util.js
+     assets.js · pixelfont.js (hand-made 5×7 font) · config.js (narrator voice) · util.js
 assets/sprites/  explorer_sheet.png/.json, explorer_portraits.png/.json, explorer_reference_sheet.png,
                  environment_atlas.png/.json (palms, jungle, rocks, boat, portal + energy frames, mountain,
                  clouds, sun, DSI logo...)

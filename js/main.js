@@ -264,29 +264,11 @@ function drawFinal(t) {
       ctx.restore();
     }
   }
-  const px = captionPx();
-  let y = ly * s + 10 * s;
-  // MEET US AT DSI!
+  const y = ly * s + 10 * s;
+  // MEET US AT DSI! — the only text on the final screen
   const big = Math.max(1, Math.round(s * Math.min(2.4, (R.VW - 20) / textWidth('MEET US AT DSI!'))));
   const ma = prog(t, T0 + 0.45, T0 + 0.9);
   if (ma > 0) drawText(ctx, 'MEET US AT DSI!', W / 2, y + (1 - ma) * 4 * s, big, { reveal: Math.floor((t - T0 - 0.45) * 30), fill: ['#ffffff', '#f6d36a', '#e0a23a'] });
-  y += 11 * big;
-  const sa = prog(t, T0 + 1.6, T0 + 2.2);
-  if (sa > 0) {
-    const maxW = Math.floor(((Math.min(R.VW, 300) - 22) * s) / px);
-    for (const ln of wrap('YOUR NEXT ADVENTURE STARTS HERE.', maxW)) { drawText(ctx, ln, W / 2, y, px, { alpha: sa, fill: ['#e6fbff', '#9fe6ff', '#5fc4f0'], outline: '#06142a' }); y += 10 * px; }
-  }
-  // event placeholders (configurable)
-  const info = [cfg.event.booth, cfg.event.date, cfg.event.info].filter(Boolean);
-  const small = Math.max(1, Math.round(s * 1.0));
-  y += 6 * s;
-  info.forEach((txt, i) => {
-    const ia = prog(t, T0 + 2.4 + i * 0.25, T0 + 2.9 + i * 0.25);
-    if (ia <= 0) return;
-    const maxW = Math.floor(((Math.min(R.VW, 300) - 22) * s) / small);
-    for (const ln of wrap(txt.toUpperCase(), maxW)) { drawText(ctx, ln, W / 2, y, small, { alpha: ia * 0.95, fill: ['#ffffff', '#e8e2d0', '#cfc6b0'], outline: '#0a0c14' }); y += 10 * small; }
-    y += 3 * small;
-  });
 }
 
 // ---------------------------------------------------------------- sound plan
