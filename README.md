@@ -1,5 +1,7 @@
 # DSI Island — Part 1: *The Discovery*
 
+**Live:** https://dsi-island-discovery.vercel.app · **Repo:** https://github.com/alaaalshehri836/dsi-island-discovery
+
 An interactive, fully real-time pixel-art cinematic website (no video files) for the DSI university booth.
 An explorer reaches a mysterious island and discovers a glowing DSI portal. About 25 s, narrated, scored,
 built for vertical 9:16 screens and responsive to any aspect ratio.
@@ -32,6 +34,9 @@ export const NARRATOR = 'female';   // or 'male'
 Empty strings hide a line. The placeholders are deliberately left unfilled so that no event details are invented.
 
 ## Deploy
+This repo is connected to Vercel: every push to `main` redeploys https://dsi-island-discovery.vercel.app automatically.
+Vercel settings: framework **Other**, no build command, output directory `.` (see `vercel.json`), no environment variables.
+
 Upload the whole folder, minus `tools/` if you like, to any static host: GitHub Pages, Netlify, Vercel,
 S3 or a university web server. No server code or environment variables are needed. Total payload is about 2.6 MB.
 For a kiosk at the booth, open it fullscreen (F11) in Chrome, or run it on a vertical screen or tablet.
